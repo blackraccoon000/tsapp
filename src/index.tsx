@@ -1,10 +1,17 @@
 import ReactDOM from 'react-dom';
-import EventComponent from './events/EventComponent';
+// import EventComponent from './events/EventComponent';
+import UserSearch from './classes/UserSearch';
+
+const users = [
+  { name: 'Sarah', age: 20 },
+  { name: 'Alex', age: 20 },
+  { name: 'Michael', age: 20 },
+];
 
 const App = () => {
   return (
     <div>
-      <EventComponent />
+      <UserSearch users={users} />
     </div>
   );
 };
